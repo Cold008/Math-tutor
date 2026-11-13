@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathematics Made Easy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Junior Secondary Mathematics</p>
+          <h1>Mathematics Made Easy</h1>
+        </div>
+        <div class="grade-switch" aria-label="Class selector">
+          <button class="class-btn active" data-grade="jss1">JSS1</button>
+          <button class="class-btn" data-grade="jss2">JSS2</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div>
+            <span class="badge">Study + Practice</span>
+            <h2>Complete revision for every JSS1 and JSS2 maths topic</h2>
+            <p>
+              Learn the full syllabus, revise each topic, and practise exam-style questions with answers and explanations.
+            </p>
+          </div>
+          <div class="stats" id="statsContainer"></div>
+        </section>
+
+        <section class="content-grid">
+          <aside class="topics-panel">
+            <div class="panel-heading">
+              <h3>Topics</h3>
+            </div>
+            <div id="topicsContainer" class="topics-container"></div>
+          </aside>
+
+          <section class="topic-panel">
+            <div id="topicDetails"></div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
